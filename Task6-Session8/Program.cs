@@ -129,6 +129,46 @@ namespace Task6_Session8
             Console.WriteLine("P01: " + P01);
             Console.WriteLine("P02: " + P02);
 
+            Console.WriteLine("-------------------------------------------------------------------------");
+
+
+
+            // Socend Project
+
+            Console.WriteLine("Math : \n ");
+
+            Maths maths = new Maths();
+
+            Console.WriteLine(Maths.Add(10, 5));
+            Console.WriteLine(Maths.Subtract(10, 5));
+            Console.WriteLine(Maths.Multiply(10, 5));
+            Console.WriteLine(Maths.Divide(10, 5));
+
+            Console.WriteLine("-------------------------------------------------------------------------");
+
+
+            // Third PROJECT 
+
+            Console.WriteLine("duration : \n ");
+
+            Duration d1 = new Duration();
+
+            d1.Hours = 2;
+            d1.Minutes = 30;
+            d1.Seconds = 15;
+
+            Duration d2 = new Duration();
+
+            d2.Hours = 2;
+            d2.Minutes = 30;
+            d2.Seconds = 15;
+
+            Console.WriteLine(d1);
+
+            Console.WriteLine(d1.Equals(d2));
+
+            Console.WriteLine(d1.GetHashCode());
+            Console.WriteLine(d2.GetHashCode());
 
         }
     }
