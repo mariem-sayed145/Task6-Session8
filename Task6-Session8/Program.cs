@@ -151,24 +151,14 @@ namespace Task6_Session8
 
             Console.WriteLine("duration : \n ");
 
-            Duration d1 = new Duration();
+            Duration D1 = new Duration(1, 10, 15);
+            Console.WriteLine(D1);
 
-            d1.Hours = 2;
-            d1.Minutes = 30;
-            d1.Seconds = 15;
+            Duration D2 = new Duration(7800);
+            Console.WriteLine(D2);
 
-            Duration d2 = new Duration();
-
-            d2.Hours = 2;
-            d2.Minutes = 30;
-            d2.Seconds = 15;
-
-            Console.WriteLine(d1);
-
-            Console.WriteLine(d1.Equals(d2));
-
-            Console.WriteLine(d1.GetHashCode());
-            Console.WriteLine(d2.GetHashCode());
+            Duration D3 = new Duration(666);
+            Console.WriteLine(D3);
 
         }
     }
